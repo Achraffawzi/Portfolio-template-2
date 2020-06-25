@@ -9,6 +9,6 @@ This Is a Cloning For The Homepage Of Netflix Website (static webpage)
  - Bootstrap
  
 ## Contact
-  ### Email : achraffawzi224a@gmail.com
+  ## Email : achraffawzi224a@gmail.com
   
 Please feel free to contact me for any additional layout or ideas. Thank You!
