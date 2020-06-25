@@ -1,0 +1,257 @@
+/* GENERAL RULES */
+:root {
+	--primary-color: #e50914;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #111;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+
+/* SHOWCASE */
+.showcase {
+	width: 100%;
+	height: 93vh;
+	background: url(../images/netflixBackground.jpg) no-repeat center center/cover;
+	position: relative;
+}
+
+.showcase::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, .6);
+	box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000
+}
+
+.showcase .showcase-top {
+	height: 90px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+
+.showcase .showcase-top img {
+	width: 106px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+
+.showcase .showcase-top a {
+	position: absolute;
+	right: 2rem;
+	background-color: var(--primary-color);
+	width: 100px;
+	font-size: .8rem;
+}
+
+.showcase .showcase-bottom {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	z-index: 999;
+}
+
+.showcase .showcase-bottom h1 {
+	font-size: 3.3rem;
+	margin-bottom: 1rem;
+}
+
+.showcase .showcase-bottom .free-trial-btn {
+	background-color: var(--primary-color);
+	font-size: 1.7rem;
+}
+
+
+/* TAGS */
+.tags {
+	padding-top: 1.8rem;
+}
+
+.tags .container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+.tags .container .tag-1,
+.tags .container .tag-2,
+.tags .container .tag-3 {
+	color: grey;
+}
+
+.tags .container .tag-1:hover,
+.tags .container .tag-2:hover,
+.tags .container .tag-3:hover {
+	color: #fff;
+}
+
+.show-border {
+	border-bottom: 3px solid var(--primary-color);
+}
+
+/* TAGS CONTENT */
+.tag-1,
+.tag-2,
+.tag-3 {
+	cursor: pointer;
+}
+.tags-1-content {
+	background-color: #000;
+}
+
+.tags-1-content .container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 2.8rem 0;
+}
+
+.tags-1-content .container .tags-1-content-description p{
+	font-size: 1.4rem;
+}
+
+.tags-1-content .container .tags-1-content-description a {
+	background-color: var(--primary-color);
+}
+
+.tags-1-content .container img {
+	height: 300px;
+}
+
+/* TAGS 2 CONTENT */
+.tags-2-content {
+	background-color: #000;
+	padding: 2.8rem 0;
+}
+
+.tags-2-content .tags-2-content-top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.2rem
+}
+
+.tags-2-content .tags-2-content-top p {
+	font-size: 1.5rem;
+}
+
+.tags-2-content .tags-2-content-top a {
+	background-color: var(--primary-color);
+	height: 40px;
+}
+
+.tags-2-content .tags-2-content-bottom {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.tags-2-content .tags-2-content-bottom .test img {
+	width: 100%;
+}
+
+/* TAGS 3 CONTENT */
+.tags-3-content {
+	background-color: #000;
+}
+
+.tags-3-content .container {
+	padding: 2.8rem;
+}
+.tags-3-content .container .tags-3-content-top {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.4rem;
+	margin-bottom: 2.4rem;
+}
+
+.tags-3-content .container .tags-3-content-top p {
+	font-size: 1.4rem;
+}
+
+.tags-3-content .container .tags-3-content-top a {
+	background-color: var(--primary-color);
+}
+
+.tags-3-content .container table {
+	width: 100%;
+}
+
+.tags-3-content .container table tr {
+	line-height: 2
+}
+
+.tags-3-content .container table tbody tr:nth-child(odd) {
+	background-color: #222
+}
+
+.tags-3-content .container table tr td {
+	text-align: center;
+}
+
+.tags-3-content .container table tr td:first-of-type {
+	text-align: left;
+}
+
+
+/* FOOTER */
+footer {
+	padding: 2.8rem 0;
+	background-color: #000;
+}
+
+footer p {
+	font-size: 1.2rem;
+	margin-bottom: 3.3rem;
+}
+
+footer .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+footer .container ul {
+	margin: 1rem auto;
+}

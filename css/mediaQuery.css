@@ -1,0 +1,54 @@
+/* Medium devices => md*/
+@media only screen and (max-width: 992px) {
+	.tags-1-content .container {
+		grid-template-columns: 1fr;
+	}
+
+	.tags-2-content .container .tags-2-content-top,
+	.tags-2-content .container .tags-2-content-bottom {
+		grid-template-columns: 1fr;
+	}
+
+	.tags-3-content .container .tags-3-content-top {
+		grid-template-columns: 1fr;
+	}
+
+	footer .container {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.showcase {
+		height: 100vh;
+	}
+
+	.showcase .showcase-bottom h1 {
+		font-size: 3rem;
+	}
+
+	.showcase .showcase-bottom .free-trial-btn {
+		font-size: 1rem
+	}
+}
+
+@media only screen and (max-width: 473px) {
+	.showcase .showcase-top .sign-in-btn {
+		top: 75%;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+	.showcase .showcase-bottom h1 {
+		font-size: 1.8rem;
+	}
+
+	.showcase .showcase-bottom p {
+		font-size: 1rem;
+	}
+
+	.showcase .showcase-bottom .free-trial-btn {
+		font-size: .6rem;
+	}
+}
